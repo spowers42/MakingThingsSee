@@ -17,9 +17,9 @@ void setup()
   kinect = new SimpleOpenNI(this);
   kinect.enableDepth();
 
-  image1 = new MovableImage("image1.jpg", true);
-  image2 = new MovableImage("image2.jpg", false);
-  image3 = new MovableImage("image3.jpg", false);
+  image1 = new MovableImage("C:\Users\spowers\Pictures\image1.jpg", true);
+  image2 = new MovableImage("C:\Users\spowers\Pictures\image2.jpg", false);
+  image3 = new MovableImage("C:\Users\spowers\Pictures\image3.jpg", false);
   background(0);
 }
 
@@ -59,6 +59,9 @@ void draw()
 
 void mousePressed(){
   switch(currentImage){
+    case 0:
+      image1.switchMoving();
+      currentImage=1;
     case 1:
       image1.switchMoving();
       image2.switchMoving();
@@ -71,8 +74,7 @@ void mousePressed(){
       break;
     case 3:
       image3.switchMoving();
-      image1.switchMoving();
-      currentImage=1;
+      currentImage=0;
   }
 }
 
