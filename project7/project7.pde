@@ -17,9 +17,9 @@ void setup()
   kinect = new SimpleOpenNI(this);
   kinect.enableDepth();
 
-  image1 = new MovableImage("C:\Users\spowers\Pictures\image1.jpg", true);
-  image2 = new MovableImage("C:\Users\spowers\Pictures\image2.jpg", false);
-  image3 = new MovableImage("C:\Users\spowers\Pictures\image3.jpg", false);
+  image1 = new MovableImage("C:\\Users\\spowers\\Pictures\\image1.jpg", true);
+  image2 = new MovableImage("C:\\Users\\spowers\\Pictures\\image2.jpg", false);
+  image3 = new MovableImage("C:\\Users\\spowers\\Pictures\\image3.jpg", false);
   background(0);
 }
 
